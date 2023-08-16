@@ -7,19 +7,18 @@ import fs from 'fs';
 let file1 = fs.readFileSync('file1.json', 'utf8');
 let file2 = fs.readFileSync('file2.json', 'utf8');
 
+
 const obj1 = JSON.parse(file1)
 const obj2 = JSON.parse(file2)
-
 // const getParsedDate = (file, ext) => {
 //   switch(ext) {
 //     case '.json': return JSON.parse(file)
 //   }
 // }
 
-
 const genDiff = (obj1, obj2) => {
   const result = [];
-  
+
   const keys = Object.keys({...obj1, ...obj2}).sort()
 
 
@@ -44,4 +43,4 @@ const genDiff = (obj1, obj2) => {
       if (pair.status === 'unchanged') return `  ${pair.key}: ${pair.value}`}).join(' \n')
 };
 
-console.log(genDiff(obj1, obj2))
+export default genDiff;
