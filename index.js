@@ -4,12 +4,9 @@ import _ from "lodash";
 import fs from 'fs';
 
 
-let file1 = fs.readFileSync('file1.json', 'utf8');
-let file2 = fs.readFileSync('file2.json', 'utf8');
 
 
-const obj1 = JSON.parse(file1)
-const obj2 = JSON.parse(file2)
+
 // const getParsedDate = (file, ext) => {
 //   switch(ext) {
 //     case '.json': return JSON.parse(file)
@@ -17,10 +14,16 @@ const obj2 = JSON.parse(file2)
 // }
 
 const genDiff = (obj1, obj2) => {
+  obj1 = fs.readFileSync(obj1, 'utf8');
+  obj2 = fs.readFileSync(obj2, 'utf8');
+  
+  obj1 = JSON.parse(obj1)
+  obj2 = JSON.parse(obj2)
   const result = [];
 
   const keys = Object.keys({...obj1, ...obj2}).sort()
 
+  
 
   for (const key of keys) {
     if (!Object.hasOwn(obj1, key)) {
