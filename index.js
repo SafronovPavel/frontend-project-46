@@ -6,7 +6,6 @@ import fs from 'fs';
 
 
 
-
 // const getParsedDate = (file, ext) => {
 //   switch(ext) {
 //     case '.json': return JSON.parse(file)
@@ -14,8 +13,11 @@ import fs from 'fs';
 // }
 
 const genDiff = (obj1, obj2) => {
-  obj1 = fs.readFileSync(obj1, 'utf8');
-  obj2 = fs.readFileSync(obj2, 'utf8');
+
+
+
+  obj1 = fs.readFileSync(`./${obj1}`, 'utf8');
+  obj2 = fs.readFileSync(`./${obj2}`, 'utf8');
   
   obj1 = JSON.parse(obj1)
   obj2 = JSON.parse(obj2)
