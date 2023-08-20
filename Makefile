@@ -7,7 +7,7 @@ gendiff:
 publish:
 	npm publish --dry-run
 
-lint:
+make lint:
 	npx eslint .
 
 jest tests:
