@@ -5,6 +5,10 @@
 
 <a href="https://codeclimate.com/github/SafronovPavel/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/0551f75618469599291b/test_coverage" /></a>
 
+[![linter](https://github.com/SafronovPavel/frontend-project-46/actions/workflows/linter.yml/badge.svg)](https://github.com/SafronovPavel/frontend-project-46/actions/workflows/linter.yml)
+
+[![jest tests](https://github.com/SafronovPavel/frontend-project-46/actions/workflows/jest-tests.yml/badge.svg)](https://github.com/SafronovPavel/frontend-project-46/actions/workflows/jest-tests.yml)
+
 ### Работа пакета на 3м этапе
     
 <a href="https://asciinema.org/a/603382" target="_blank"><img src="https://asciinema.org/a/603382.svg" /></a>
