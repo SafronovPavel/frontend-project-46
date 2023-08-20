@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 import fs from 'fs';
+import parse from './parsers.js'
+
 // import _ from "lodash";
 
 const genDiff = (firstFile, secondFile) => {
   const readFirstFile = fs.readFileSync(`./${firstFile}`, 'utf8');
   const readSecondFile = fs.readFileSync(`./${secondFile}`, 'utf8');
-  const obj1 = JSON.parse(readFirstFile);
-  const obj2 = JSON.parse(readSecondFile);
+  const obj1 = parse(firstFile, readFirstFile);
+  const obj2 = parse(secondFile, readSecondFile);
   const result = [];
 
   const keys = Object.keys({ ...obj1, ...obj2 }).sort();
