@@ -1,4 +1,4 @@
-name: hello-world
+name: linter
 on: push
 jobs:
   my-job:
