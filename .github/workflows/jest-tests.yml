@@ -1,0 +1,8 @@
+name: jest tests
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: make jest tests
