@@ -10,5 +10,5 @@ publish:
 lint:
 	npx eslint .
 
-make jest tests:
+jest tests:
 	npx jest
