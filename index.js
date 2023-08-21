@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import fs from 'fs';
-import parse from './parsers.js'
+import parse from './parsers.js';
 
 // import _ from "lodash";
 
