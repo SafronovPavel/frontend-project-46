@@ -2,7 +2,7 @@
 import path from 'path';
 import yaml from 'js-yaml';
 
-const parse = (fileName, fileRead) => {
+const parser = (fileName, fileRead) => {
   const ext = path.extname(fileName);
 
   switch (ext) {
@@ -16,4 +16,4 @@ const parse = (fileName, fileRead) => {
       throw new Error(`Unknown file type - ${fileName}!`);
   }
 };
-export default parse;
+export default parser;
