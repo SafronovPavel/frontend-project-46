@@ -5,8 +5,8 @@ import parse from './parsers.js';
 // import _ from "lodash";
 
 const genDiff = (firstFile, secondFile) => {
-  const readFirstFile = fs.readFileSync(`./${firstFile}`, 'utf8');
-  const readSecondFile = fs.readFileSync(`./${secondFile}`, 'utf8');
+  const readFirstFile = fs.readFileSync(`./__tests__/__fixtures__/${firstFile}`, 'utf8');
+  const readSecondFile = fs.readFileSync(`./__tests__/__fixtures__/${secondFile}`, 'utf8');
   const obj1 = parse(firstFile, readFirstFile);
   const obj2 = parse(secondFile, readSecondFile);
   const result = [];
