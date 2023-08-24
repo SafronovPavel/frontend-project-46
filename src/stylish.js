@@ -2,7 +2,7 @@ import _ from "lodash";
 
 const stringfy = (value, depth = 1) => {
   const iter = (data, depthIter) => {
-    const beforeSpace = '.'.repeat(4 * depthIter - 2)
+    const beforeSpace = ' '.repeat(4 * depthIter - 2)
     const afterSpace = ' '.repeat(4 * depthIter - 4)
 
     if (!_.isObject(data)) return `${data}`;
@@ -16,7 +16,7 @@ const stringfy = (value, depth = 1) => {
 
 const getStylishFormat = (diffTree) => {
   const iter = (diffObj, depth = 1) => {
-    const beforeSpace = '.'.repeat(4 * depth - 2)
+    const beforeSpace = ' '.repeat(4 * depth - 2)
     const afterSpace = ' '.repeat(4 * depth - 4)
 
     const result = diffObj.flatMap((user) => {

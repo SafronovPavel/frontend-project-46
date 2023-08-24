@@ -16,3 +16,7 @@
 ### Работа пакета на 5м этапе
 
 <a href="https://asciinema.org/a/wCaqHWv10pg9Y6rjvEvSJQvY2" target="_blank"><img src="https://asciinema.org/a/wCaqHWv10pg9Y6rjvEvSJQvY2.svg" /></a>
+
+### Работа пакета на 6м этапе
+
+<a href="https://asciinema.org/a/RqP5UxvNyyI9N4UmtlNjOgroS" target="_blank"><img src="https://asciinema.org/a/RqP5UxvNyyI9N4UmtlNjOgroS.svg" /></a>
