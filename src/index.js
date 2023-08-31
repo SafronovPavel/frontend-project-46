@@ -2,7 +2,7 @@
 import fs from 'fs';
 import parser from './parsers.js';
 import getDiffTree from './getDiff.js';
-import getStylishFormat from './stylish.js';
+import getFormat from '../formatters/index.js';
 
 
 // import _ from "lodash";
@@ -14,7 +14,7 @@ const genDiff = (firstFile, secondFile, format = 'stylish') => {
   const obj2 = parser(secondFile, readSecondFile);
   
   const statusTree = getDiffTree(obj1, obj2)
-  return getStylishFormat(statusTree, format)
-    
+  return getFormat(statusTree, format);
 };
 export default genDiff;
+

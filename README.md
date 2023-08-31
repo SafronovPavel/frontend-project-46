@@ -9,14 +9,22 @@
 
 [![jest tests](https://github.com/SafronovPavel/frontend-project-46/actions/workflows/jest-tests.yml/badge.svg)](https://github.com/SafronovPavel/frontend-project-46/actions/workflows/jest-tests.yml)
 
-### Работа пакета на 3м этапе
+### Сравнение плоских файлов (JSON)
     
 <a href="https://asciinema.org/a/603382" target="_blank"><img src="https://asciinema.org/a/603382.svg" /></a>
 
-### Работа пакета на 5м этапе
+### Сравнение плоских файлов (yaml)
 
 <a href="https://asciinema.org/a/wCaqHWv10pg9Y6rjvEvSJQvY2" target="_blank"><img src="https://asciinema.org/a/wCaqHWv10pg9Y6rjvEvSJQvY2.svg" /></a>
 
-### Работа пакета на 6м этапе
+### Рекурсивное сравнение
 
 <a href="https://asciinema.org/a/RqP5UxvNyyI9N4UmtlNjOgroS" target="_blank"><img src="https://asciinema.org/a/RqP5UxvNyyI9N4UmtlNjOgroS.svg" /></a>
+
+### Плоский формат
+
+<a href="https://asciinema.org/a/8VBsTvkzDDuD0T0Z9ouW2mpbi" target="_blank"><img src="https://asciinema.org/a/8VBsTvkzDDuD0T0Z9ouW2mpbi.svg" /></a>
+
+### Вывод в json
+
+<a href="https://asciinema.org/a/NsiVCtDJB1I3xvdt6NGzKpTmG" target="_blank"><img src="https://asciinema.org/a/NsiVCtDJB1I3xvdt6NGzKpTmG.svg" /></a>
